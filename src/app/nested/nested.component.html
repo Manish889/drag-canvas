@@ -1,0 +1,6 @@
+<div (click)="handleClick(data.text)" style="cursor: pointer;">
+  <p>{{ data.text }}</p>
+  <ng-container *ngFor="let child of data.children">
+    <app-nested [data]="child"  (customEvent)="handleCustomEvent($event)"></app-nested>
+  </ng-container>
+</div>

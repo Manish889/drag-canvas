@@ -1,0 +1,4 @@
+<div class="draggable" #draggable [style.left.px]="x" [style.top.px]="y"
+         (mousedown)="startDragging($event)" (mouseup)="stopDragging()">
+      {{text}}
+    </div>
